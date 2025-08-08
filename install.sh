@@ -78,7 +78,12 @@ sudo dnf install -y nodejs
 
 sudo npm install -g prettier 
 
-## Pullin in my mvim config
-mkdir -p "$neovim_config_dir"
+## Pullin in my nvim config
+rm -rf "$neovim_config_dir"
 git clone "$neovim_config_repo" "$neovim_config_dir"
 
+## Prereqs
+sudo dnf install -y dnf-plugins-core
+
+## Install software
+source $vulcan_dir/software/desktop.sh
