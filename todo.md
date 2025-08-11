@@ -1,0 +1,3 @@
+- [ ] copy config files for zsh over
+- [ ] actually install zen and brave browser
+- [ ] experiment with hyperland

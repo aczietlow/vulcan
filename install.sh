@@ -6,6 +6,10 @@ neovim_config_dir="${HOME}/.config/nvim"
 vulcan_repo=""
 vulcan_dir="${HOME}/.local/share/vulcan"
 
+user_name="aczietlow"
+user_email="aczietlow@gmail.com"
+
+
 ## Familiar util functions
 echo-red ()      { echo -e "${red}$1${NC}"; }
 echo-green ()    { echo -e "${green}$1${NC}"; }
@@ -65,25 +69,15 @@ if [ "$EUID" -ne 0 ]; then
   fi 
 fi
 
-# Start with git
-
-# Neovim
-sudo dnf install -y \
-  gcc make \
-  ripgrep fd-find unzip \
-  neovim
-
-## Neovim Dependencies
-sudo dnf install -y nodejs
-
-sudo npm install -g prettier 
-
-## Pullin in my nvim config
-rm -rf "$neovim_config_dir"
-git clone "$neovim_config_repo" "$neovim_config_dir"
 
 ## Prereqs
 sudo dnf install -y dnf-plugins-core
 
+# Development Tools
+source $vulcan_dir/install/dev/git.sh
+source $vulcan_dir/install/dev/go.sh
+source $vulcan_dir/install/dev/neovim.sh
+source $vulcan_dir/install/dev/terminal.sh
+
 ## Install software
-source $vulcan_dir/software/desktop.sh
+source $vulcan_dir/install/software/desktop.sh
