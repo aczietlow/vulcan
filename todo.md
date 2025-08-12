@@ -1,3 +1,5 @@
 - [ ] copy config files for zsh over
 - [ ] actually install zen and brave browser
 - [ ] experiment with hyperland
+- [x] copy over all config files to ~/.config/
+- [ ] install hyprland?

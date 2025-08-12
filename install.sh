@@ -79,5 +79,9 @@ source $vulcan_dir/install/dev/go.sh
 source $vulcan_dir/install/dev/neovim.sh
 source $vulcan_dir/install/dev/terminal.sh
 
+## Install Hyprland
+source $vulcan_dir/install/desktop/hyprland.sh
+
 ## Install software
 source $vulcan_dir/install/software/desktop.sh
+
