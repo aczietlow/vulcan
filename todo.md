@@ -3,3 +3,4 @@
 - [ ] experiment with hyperland
 - [x] copy over all config files to ~/.config/
 - [ ] install hyprland?
+- [ ] install makemkv for dvd hobby

@@ -69,6 +69,11 @@ if [ "$EUID" -ne 0 ]; then
   fi 
 fi
 
+# Enable RPM Fusion Repos
+sudo dnf install -y \
+  "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm" \
+  "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+
 
 ## Prereqs
 sudo dnf install -y dnf-plugins-core
@@ -84,4 +89,5 @@ source $vulcan_dir/install/desktop/hyprland.sh
 
 ## Install software
 source $vulcan_dir/install/software/desktop.sh
+source $vulcan_dir/install/software/makemkv.sh
 
