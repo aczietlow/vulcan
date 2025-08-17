@@ -35,3 +35,28 @@ sudo make install
 popd
 
 # TODO: figure out if I want to keep the src files for manual compliations like this, or delete the source files
+
+# Additional video edit and transcoding tools
+sudo dnf install -y \
+  mkvtoolnix mkvtoolnix-gui \
+  vlc vlc-extras
+
+
+# Install file bot 
+
+# 1. Add repository
+sudo dnf5 config-manager addrepo --from-repofile='https://raw.githubusercontent.com/filebot/plugins/master/yum/main.repo'
+
+# 2. Enable repository
+sudo dnf5 -y config-manager setopt filebot.enabled=1
+
+# 3. Install dependencies
+sudo dnf5 -y install zenity mediainfo
+
+# 4. Install FileBot
+sudo dnf5 -y install filebot
+
+# 5. Run FileBot
+filebot -script fn:sysinfo
+
+## TODO: Add license key to filebot?
