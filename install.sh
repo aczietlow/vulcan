@@ -84,6 +84,10 @@ source $vulcan_dir/install/dev/go.sh
 source $vulcan_dir/install/dev/neovim.sh
 source $vulcan_dir/install/dev/terminal.sh
 
+## TODO: find a place for these things?
+## Installs nfs for natislus.
+sudo dnf install gvfs-nfs
+
 ## Install Hyprland
 source $vulcan_dir/install/desktop/hyprland.sh
 
