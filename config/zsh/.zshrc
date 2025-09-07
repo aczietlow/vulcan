@@ -106,3 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
 
+# Wire go up
+export GOPATH=$HOME/go
+export GOBIN="$GOPATH/bin"              # where go installs binaries
+export PATH="$PATH:$GOBIN"
