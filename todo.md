@@ -6,6 +6,7 @@
 - [x] copy over all config files to ~/.config/
 - [x] install hyprland?
 - [ ] install makemkv for dvd hobby
+- [x] install nerd fonts
 
 
 - [ ] Manually install go. the rpm from upstream isn't updated as quickly as I'd like

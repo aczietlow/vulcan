@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 sudo dnf install -y \
-  alacritty jq zsh
+  alacritty jq zsh \
+  btop
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 

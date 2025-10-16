@@ -7,9 +7,9 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "sway/mode",
-        "sway/scratchpad"
+        "hyprland/workspaces"
+        // "sway/mode",
+        // "sway/scratchpad"
     ],
     "modules-center": [
         "hyprland/window"
@@ -23,7 +23,8 @@
         "backlight",
         "battery",
         "clock",
-        "tray"
+        "tray",
+        "custom/power"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -78,12 +79,12 @@
     "clock": {
         "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d %h:%M}"
+        "format-alt": "{:%d %H:%M}"
     },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false,
-        "on-click": "$TERMINAL -e top"
+        "on-click": "$TERMINAL -e btop"
     },
     "memory": {
         "format": "{}% "

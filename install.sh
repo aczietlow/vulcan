@@ -88,7 +88,8 @@ source $vulcan_dir/install/dev/terminal.sh
 ## Installs nfs for natislus.
 sudo dnf install gvfs-nfs
 
-## Install Hyprland
+## Install Desktop Environment
+source $vulcan_dir/install/desktop/fonts.sh
 source $vulcan_dir/install/desktop/hyprland.sh
 
 ## Install software
