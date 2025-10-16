@@ -1,4 +1,6 @@
 - [ ] copy config files for zsh over
+- [ ] copy all cofing files to ~/.config
+- [ ] update anything that doesn't default to looking for files there
 - [ ] actually install zen and brave browser
 - [x] experiment with hyperland
 - [x] copy over all config files to ~/.config/
