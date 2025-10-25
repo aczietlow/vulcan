@@ -82,11 +82,11 @@ sudo dnf install -y dnf-plugins-core
 source $vulcan_dir/install/dev/git.sh
 source $vulcan_dir/install/dev/go.sh
 source $vulcan_dir/install/dev/neovim.sh
-source $vulcan_dir/install/dev/terminal.sh
+# source $vulcan_dir/install/dev/terminal.sh
 
 ## TODO: find a place for these things?
 ## Installs nfs for natislus.
-sudo dnf install gvfs-nfs
+sudo dnf install -y gvfs-nfs
 
 ## Install Desktop Environment
 source $vulcan_dir/install/desktop/fonts.sh
