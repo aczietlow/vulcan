@@ -11,6 +11,7 @@
 - [x] install nerd fonts
 - [ ] install minecraft/curseforge
 - [ ] install discord
+- [ ] install intel GPU drivers
 
 
 - [ ] Manually install go. the rpm from upstream isn't updated as quickly as I'd like
