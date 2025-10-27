@@ -78,16 +78,16 @@ sudo dnf install -y \
 ## Prereqs
 sudo dnf install -y dnf-plugins-core
 
-# Copy over all config files
-for d in $vulcan_dir/config/*; do
-  # Overwrite if exists, don't derefernece dest, treat as plain text path (replace it, don't create inside it)
-  ln -sfnT "$d" "$HOME/.config/$(basename "$d")"
-done
+## Prereq config
+source $vulcan_dir/install/config/config.sh
+source $vulcan_dir/install/config/power.sh
 
-# Development Tools
+
+## Development Tools
 source $vulcan_dir/install/dev/git.sh
 source $vulcan_dir/install/dev/go.sh
 source $vulcan_dir/install/dev/neovim.sh
+#TODO: capture the exit code from this, don't exit the build script
 # source $vulcan_dir/install/dev/terminal.sh
 
 ## TODO: find a place for these things?

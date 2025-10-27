@@ -13,6 +13,7 @@
 - [ ] install minecraft/curseforge
 - [ ] install discord
 - [ ] install intel GPU drivers
+- [ ] Clone the git repo without first requiring keygen
 
 
 - [ ] Manually install go. the rpm from upstream isn't updated as quickly as I'd like

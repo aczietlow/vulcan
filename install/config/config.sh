@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-# copy all config to its new home
-cp -R ~/.local/share/vulcan/config/* ~/.config/
+for d in $vulcan_dir/config/*; do
+  # Overwrite if exists, don't derefernece dest, treat as plain text path (replace it, don't create inside it)
+  ln -sfnT "$d" "$HOME/.config/$(basename "$d")"
+done
