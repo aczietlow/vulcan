@@ -78,6 +78,12 @@ sudo dnf install -y \
 ## Prereqs
 sudo dnf install -y dnf-plugins-core
 
+# Copy over all config files
+# TODO: track if this has already been done
+# for d in $vulcan_dir/config/*; do
+#   ln -s "$d" "$HOME/.config/$(basename "$d")"
+# done
+
 # Development Tools
 source $vulcan_dir/install/dev/git.sh
 source $vulcan_dir/install/dev/go.sh
@@ -96,3 +102,4 @@ source $vulcan_dir/install/desktop/hyprland.sh
 source $vulcan_dir/install/software/desktop.sh
 source $vulcan_dir/install/software/makemkv.sh
 
+echo "done~~~"
