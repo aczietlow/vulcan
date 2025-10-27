@@ -79,10 +79,10 @@ sudo dnf install -y \
 sudo dnf install -y dnf-plugins-core
 
 # Copy over all config files
-# TODO: track if this has already been done
-# for d in $vulcan_dir/config/*; do
-#   ln -s "$d" "$HOME/.config/$(basename "$d")"
-# done
+for d in $vulcan_dir/config/*; do
+  # Overwrite if exists, don't derefernece dest, treat as plain text path (replace it, don't create inside it)
+  ln -sfnT "$d" "$HOME/.config/$(basename "$d")"
+done
 
 # Development Tools
 source $vulcan_dir/install/dev/git.sh

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-makemkv_version=1.18.1
+makemkv_version=1.18.2
 
 mkdir -p ~/Downloads/makemkv
 cd ~/Downloads/makemkv
@@ -13,10 +13,10 @@ wget --no-http-keep-alive --header="Accept-Encoding: identity" https://www.makem
 tar -zxvf makemkv-oss-${makemkv_version}.tar.gz && rm makemkv-oss-${makemkv_version}.tar.gz
 tar -zxvf makemkv-bin-${makemkv_version}.tar.gz && rm makemkv-bin-${makemkv_version}.tar.gz
 
-sudo dnf install -y \
+sudo dnf install -y --allowerasing \
   zlib-devel openssl-devel \
   expat-devel ffmpeg ffmpeg-devel \
-  qt5-qtbase-devel
+  qt5-qtbase-devel 
 
 # push the dir to the stack, so we can easily return from where we started.
 pushd makemkv-oss-${makemkv_version}

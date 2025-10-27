@@ -6,7 +6,8 @@ sudo dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-releas
 ## Zen Browser
 sudo dnf copr enable -y sneexy/zen-browser
 
-sudo dnf check-update -y
+# Exits with 100 if there are updates
+# sudo dnf check-update -y
 
 sudo dnf install -y \
   brave-browser zen-browser 
