@@ -1,3 +1,16 @@
+/* --- Tokyo Night palette --- */
+
+@define-color tn-bg       #1a1b26;
+@define-color tn-bg-alt   #24283b;
+@define-color tn-fg       #c0caf5;
+@define-color tn-muted    #a9b1d6;
+@define-color tn-border   #7aa2f7;
+@define-color tn-hover    #2f334d;
+@define-color tn-accent   #7aa2f7;
+@define-color tn-green    #9ece6a;
+@define-color tn-yellow   #e0af68;
+@define-color tn-red      #f7768e;
+
 * {
   /* font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace; */
   font-family: "JetBrainsMono Nerd Font", monospace;
@@ -60,7 +73,8 @@ window#waybar.chromium {
 #cpu,
 #memory,
 #custom-lock,
-#custom-power {
+#custom-power,
+#idle_inhibitor {
   background-color: #101010;
   padding: 0.5rem 1rem;
   margin: 5px 0;
@@ -104,7 +118,6 @@ window#waybar.chromium {
   margin-left: 1rem;
 }
 
-
 #custom-lock {
   border-radius: 5px 0px 0px 5px;
   color: #babbf1;
@@ -120,4 +133,75 @@ window#waybar.chromium {
   margin-right: 1rem;
   margin-left: 1rem;
   border-radius: 5px;
+}
+
+/* ### Menu #### */
+
+menu {
+	background: @tn-bg;
+	color: @tn-fg;
+}
+
+menuitem {
+    border: 1px solid @tn-border;
+    border-radius: 10px;
+}
+menu separator {
+  background: @tn-border;
+}
+menuitem,
+menu menuitem {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+menuitem:hover,
+menu menuitem:hover {
+  background: @tn-hover;
+  color: @tn-fg;
+}
+
+/* Tooltips */
+tooltip,
+tooltip * {
+  background: @tn-bg;
+  color: @tn-fg;
+}
+tooltip {
+  border: 1px solid @tn-border;
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+
+/* Sliders in popups (e.g., pulseaudio volume) */
+scale trough {
+  background: @tn-bg-alt;
+  border: 1px solid @tn-border;
+  border-radius: 6px;
+  min-height: 8px;
+}
+scale highlight,
+scale progress {
+  background: @tn-accent;
+  border-radius: 6px;
+}
+scale slider {
+  background: @tn-fg;
+  border: 1px solid @tn-border;
+  border-radius: 50%;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+/* Optional: clock calendar popup */
+calendar {
+  background: @tn-bg;
+  color: @tn-fg;
+  border-radius: 8px;
+}
+calendar:selected {
+  background: @tn-accent;
+  color: @tn-bg;
+}
+calendar.header, calendar.button {
+  color: @tn-muted;
 }
