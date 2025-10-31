@@ -136,28 +136,57 @@ window#waybar.chromium {
 }
 
 /* ### Menu #### */
-
 menu {
-	background: @tn-bg;
-	color: @tn-fg;
+  background: @tn-bg;
+  color: @tn-fg;
+  border: 1px solid @tn-border;
+  border-radius: 10px;
+  padding: 6px; /* space around items */
 }
 
+/* Items */
 menuitem {
-    border: 1px solid @tn-border;
-    border-radius: 10px;
+  background: transparent;
+  color: @tn-fg;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 500;
 }
-menu separator {
-  background: @tn-border;
-}
-menuitem,
-menu menuitem {
-  padding: 6px 10px;
-  border-radius: 6px;
-}
-menuitem:hover,
-menu menuitem:hover {
+menuitem:hover {
   background: @tn-hover;
   color: @tn-fg;
+}
+
+/* Disabled items */
+menuitem:disabled {
+  color: @tn-muted;
+  opacity: 0.7;
+}
+
+/* Separators */
+menu separator,
+separator {
+  background: @tn-border;
+  min-height: 1px;
+  margin: 6px 4px;
+}
+
+/* Check/Radio states (if you ever use them) */
+menuitem check,
+menuitem radio {
+  background: transparent;
+  color: @tn-accent;
+}
+menuitem check:checked,
+menuitem radio:checked {
+  color: @tn-green;
+}
+
+/* Submenus (if present) */
+menu menu {
+  background: @tn-bg;
+  border: 1px solid @tn-border;
+  border-radius: 10px;
 }
 
 /* Tooltips */

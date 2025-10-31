@@ -26,5 +26,5 @@ sudo dnf copr enable -y markupstart/SwayOSD
 sudo dnf install -y swayosd
 
 # Incase working with older x11 file
-sudo sed -i -E 's/^\s*#?\s*WaylandEnable\s*=\s*false/#WaylandEnable=false/' /etc/gdm/custom.conf
+# sudo sed -i -E 's/^\s*#?\s*WaylandEnable\s*=\s*false/#WaylandEnable=false/' /etc/gdm/custom.conf
 
