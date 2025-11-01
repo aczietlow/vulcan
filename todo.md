@@ -34,3 +34,7 @@ status=$?
 
 ## Hyprland 
 - [ ] play with hyprpaper to get better looking wallpapers
+
+
+## steam
+- [ ] make balatro run!!!
