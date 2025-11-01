@@ -110,3 +110,5 @@ source $ZSH/oh-my-zsh.sh
 export GOPATH=$HOME/go
 export GOBIN="$GOPATH/bin"              # where go installs binaries
 export PATH="$PATH:$GOBIN"
+
+export PATH="$HOME/.local/bin:$PATH"

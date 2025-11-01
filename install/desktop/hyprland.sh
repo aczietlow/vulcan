@@ -15,7 +15,9 @@ sudo dnf install -y \
   hyprpaper \
   pavucontrol \
   xdg-desktop-portal-hyprland \
-  xdg-desktop-portal-gtk
+  xdg-desktop-portal-gtk \
+  kvantum-qt6
+
 
 
 sudo dnf copr enable -y livegrenier/hyprland

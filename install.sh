@@ -103,7 +103,6 @@ source $vulcan_dir/install/software/desktop.sh
 source $vulcan_dir/install/software/makemkv.sh
 
 ## System config files
-source $vulcan_dir/install/config/config.sh
 # source $vulcan_dir/install/config/power.sh
 
 echo "done~~~"
