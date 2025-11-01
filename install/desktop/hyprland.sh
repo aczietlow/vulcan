@@ -12,7 +12,7 @@ sudo dnf install -y \
   hyprpolkitagent \
   waybar \
   mako \
-  swaybg \
+  hyprpaper \
   pavucontrol \
   xdg-desktop-portal-hyprland \
   xdg-desktop-portal-gtk

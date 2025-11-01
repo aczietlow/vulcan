@@ -24,10 +24,13 @@
 sudo dnf check-update > /dev/null 2>&1
 status=$?
 ```
-- [ ] waybar is double printing
+- [x] waybar is double printing
 
 ## Waybar 
-- [ ] Update workspaces thingy to look nicer
+- [x] Update workspaces thingy to look nicer
 - [x] Fix on-click for network, cpu, and memory
 - [ ] Make the hyprland toptip page pop up
   - idk what this means anymore?
+
+## Hyprland 
+- [ ] play with hyprpaper to get better looking wallpapers
