@@ -1,4 +1,4 @@
-
+# Todo list
 
 - [x] copy config files for zsh over. make zsh default to ~./config
 - [x] copy all cofing files to ~/.config
@@ -12,7 +12,7 @@
 - [x] install nerd fonts
 - [ ] install minecraft/curseforge
 - [ ] install discord
-- [ ] install intel GPU drivers
+- [x] install intel GPU drivers
 - [ ] Clone the git repo without first requiring keygen
 
 
@@ -26,6 +26,9 @@ status=$?
 ```
 - [x] waybar is double printing
 
+## Dev
+- [ ] investigate installing go from webi `curl -sS https://webi.sh/golang | sh`
+
 ## Waybar 
 - [x] Update workspaces thingy to look nicer
 - [x] Fix on-click for network, cpu, and memory
@@ -33,8 +36,7 @@ status=$?
   - idk what this means anymore?
 
 ## Hyprland 
-- [ ] play with hyprpaper to get better looking wallpapers
-
+- [x] play with hyprpaper to get better looking wallpapers
 
 ## steam
-- [ ] make balatro run!!!
+- [x] make balatro run!!!

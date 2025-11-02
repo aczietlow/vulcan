@@ -56,7 +56,7 @@ echo-stderr ()
 }
 
 # Get our variables
-read -p "Username: " username
+#read -p "Username: " username
 #echo "You entered $username"
 
 # Ask for sudo
@@ -80,7 +80,10 @@ sudo dnf install -y dnf-plugins-core
 
 ## Prereq config
 source $vulcan_dir/install/config/config.sh
+
+## System config
 source $vulcan_dir/install/config/power.sh
+source $vulcan_dir/install/config/hardware/intel.sh
 
 
 ## Development Tools
@@ -100,9 +103,8 @@ source $vulcan_dir/install/desktop/hyprland.sh
 
 ## Install software
 source $vulcan_dir/install/software/desktop.sh
+source $vulcan_dir/install/software/steam.sh
 source $vulcan_dir/install/software/makemkv.sh
 
-## System config files
-# source $vulcan_dir/install/config/power.sh
 
 echo "done~~~"
