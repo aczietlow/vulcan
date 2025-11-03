@@ -37,6 +37,7 @@ status=$?
 
 ## Hyprland 
 - [x] play with hyprpaper to get better looking wallpapers
+- [ ] Make windows scale full width and heighth
 
 ## steam
 - [x] make balatro run!!!
