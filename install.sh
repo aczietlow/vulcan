@@ -87,6 +87,8 @@ source $vulcan_dir/install/config/hardware/intel.sh
 
 
 ## Development Tools
+#TODO: capture the exit code from this, don't exit the build script
+source $vulcan_dir/install/dev/brew.sh
 source $vulcan_dir/install/dev/git.sh
 source $vulcan_dir/install/dev/go.sh
 source $vulcan_dir/install/dev/neovim.sh
