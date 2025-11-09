@@ -87,12 +87,12 @@ source $vulcan_dir/install/config/hardware/intel.sh
 
 
 ## Development Tools
-#TODO: capture the exit code from this, don't exit the build script
-source $vulcan_dir/install/dev/brew.sh
+#TODO: capture the exit code from this, don't exit the build script; uncomment brew.sh
+# source $vulcan_dir/install/dev/brew.sh
 source $vulcan_dir/install/dev/git.sh
 source $vulcan_dir/install/dev/go.sh
 source $vulcan_dir/install/dev/neovim.sh
-#TODO: capture the exit code from this, don't exit the build script
+#TODO: capture the exit code from this, don't exit the build script; uncomment terminal.sh
 # source $vulcan_dir/install/dev/terminal.sh
 
 ## TODO: find a place for these things?

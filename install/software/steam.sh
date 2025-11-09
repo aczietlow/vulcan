@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-sudo dnf install steam -y
+sudo dnf install -y \
+  steam protontricks
+
 
 # do proton via the cli
 pip3 install --user protonup
