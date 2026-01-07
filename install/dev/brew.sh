@@ -8,3 +8,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 sudo dnf group install development-tools
 
 brew install sass/sass/sass
+brew install hugo
