@@ -14,7 +14,9 @@
 - [ ] install discord
 - [x] install intel GPU drivers
 - [ ] Clone the git repo without first requiring keygen
-
+- [ ] investigate improving download speeds.
+  - maybe curl is a problem here
+- [ ] make consistant desktop entry 
 
 ## Bugs
 - [ ] installing zsh exits the installer; in terminal.sh
@@ -41,3 +43,4 @@ status=$?
 
 ## steam
 - [x] make balatro run!!!
+
