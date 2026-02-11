@@ -1,14 +1,3 @@
-alias vim="nvim"
-
-export PATH="$HOME/.local/go/bin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
-
-# Output env variables needed for brew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Composer executables
-export PATH="$PATH:~/.composer/vendor/bin/"
-
 #   ---------------------------------------
 #   WEB DEVELOPMENT
 #   ---------------------------------------
@@ -17,7 +6,7 @@ export PATH="$PATH:~/.composer/vendor/bin/"
 alias getcomposer='curl -sS https://getcomposer.org/installer | php' #Get the latest composer version
 
 # Drupal console
-source "$HOME/.console/console.rc" 2>/dev/null
+# source "$HOME/.console/console.rc" 2>/dev/null
 
 # Other
 alias editHosts='sudo edit /etc/hosts'                  # editHosts:        Edit /etc/hosts file
@@ -30,10 +19,6 @@ alias grep="grep --color=auto"
 alias egrep="egrep --color=auto"
 alias ll='ls -lhA'
 alias fuckit='sudo "$BASH" -c "$(history -p !!)"'
-
-# Mac specific
-alias showHiddenFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideHiddenFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
 #  Extract most know archives with one command
 extract () {
@@ -57,3 +42,5 @@ extract () {
      fi
 }
 
+alias vim=nvim
+alias docker=podman

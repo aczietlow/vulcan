@@ -111,7 +111,10 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Wire go up
 export GOPATH=$HOME/go
-export GOBIN="$GOPATH/bin"              # where go installs binaries
+export GOBIN="$GOPATH/bin"
 export PATH="$PATH:$GOBIN"
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# Composer executables
+export PATH="$PATH:~/.composer/vendor/bin/"
