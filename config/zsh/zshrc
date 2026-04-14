@@ -118,3 +118,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Composer executables
 export PATH="$PATH:~/.composer/vendor/bin/"
+

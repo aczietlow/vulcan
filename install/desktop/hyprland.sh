@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-sudo dnf copr enable solopasha/hyprland -y
+# TODO: solopasha hasnt updated since fedora 43
+# sudo dnf copr enable solopasha/hyprland -y
+sudo dnf copr enable lionheartp/Hyprland -y
 
 sudo dnf install -y \
   hyprland \
@@ -8,7 +10,6 @@ sudo dnf install -y \
   hyprlock \
   hypridle \
   hyprsunset \
-  hyprland-qtutils \
   hyprpolkitagent \
   waybar \
   mako \
@@ -16,12 +17,9 @@ sudo dnf install -y \
   pavucontrol \
   xdg-desktop-portal-hyprland \
   xdg-desktop-portal-gtk \
-  kvantum-qt6
-
-
-
-sudo dnf copr enable -y livegrenier/hyprland
-sudo dnf install -y hyprshot
+  kvantum-qt6 \
+  hyprshot \
+  hyprland-guiutils
 
 # SwayOSD (volume/brightness OSD)
 sudo dnf copr enable -y markupstart/SwayOSD
