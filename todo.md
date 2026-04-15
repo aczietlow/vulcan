@@ -17,6 +17,7 @@
 - [ ] investigate improving download speeds.
   - maybe curl is a problem here
 - [ ] make consistant desktop entry 
+- [ ] install tmux-sessionizer
 
 ## Bugs
 - [ ] installing zsh exits the installer; in terminal.sh
