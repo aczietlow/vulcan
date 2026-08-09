@@ -62,7 +62,8 @@
         "format-ethernet": "󰈀 ",
         "format-disconnected": "󰤠 ",
         "interval": 5,
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
     },  
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
