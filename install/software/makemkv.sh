@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-makemkv_version=1.18.2
+makemkv_version=1.18.4
 
 mkdir -p ~/Downloads/makemkv
 cd ~/Downloads/makemkv
