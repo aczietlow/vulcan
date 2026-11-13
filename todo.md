@@ -31,6 +31,7 @@ status=$?
 
 ## Dev
 - [ ] investigate installing go from webi `curl -sS https://webi.sh/golang | sh`
+- [x] install rust
 
 ## Waybar 
 - [x] Update workspaces thingy to look nicer
